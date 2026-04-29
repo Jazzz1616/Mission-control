@@ -1,5 +1,5 @@
 // 👨‍🚀 Astronauts
-fetch("http://api.open-notify.org/astros.json")
+fetch("https://api.open-notify.org/astros.json")
   .then(res => res.json())
   .then(data => {
     const list = document.getElementById("astroList");
@@ -12,7 +12,7 @@ fetch("http://api.open-notify.org/astros.json")
 
 // 🌍 ISS Location
 function getISS() {
-  fetch("http://api.open-notify.org/iss-now.json")
+  fetch("https://api.open-notify.org/iss-now.json")
     .then(res => res.json())
     .then(data => {
       document.getElementById("issLocation").textContent =
